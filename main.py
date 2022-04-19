@@ -9,14 +9,14 @@ with open('coco.names', 'r') as f:
 
 layerNames = net.getLayerNames()
 outputLayers = [layerNames[i - 1] for i in net.getUnconnectedOutLayers()]
-colors = np.random.uniform(0, 255, size=(len(classes), 3))
+colors = np.random.uniform(0, 255, size=(len(classes)+1000, 3))
 
 # Load image
-img = cv2.imread('img/1.png')
+img = cv2.imread('img/5.png')
 height, width, channels = img.shape
 
 # Detect objects
-blob = cv2.dnn.blobFromImage(img, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
+blob = cv2.dnn.blobFromImage(img, 1/1024, (416, 416), (0, 0, 0), True, crop=False)
 
 # for b in blob:
 #     for n, img_blob in enumerate(b):
@@ -54,6 +54,7 @@ indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
 
 font = cv2.FONT_HERSHEY_SIMPLEX
 
+j = 0
 for i in range(len(boxes)):
     if i in indexes:
         x, y, w, h = boxes[i]
@@ -61,7 +62,9 @@ for i in range(len(boxes)):
         color = colors[i]
         cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
         cv2.putText(img, label, (x, y + 30), font, 0.5, color, 2)
+        j += 1
 
+print(j)
 cv2.imshow('img', img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
