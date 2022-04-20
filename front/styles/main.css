@@ -14,7 +14,8 @@
 
     /* Text Color */
     --text-primary-color: #101010;
-    --link-color: #016CEA;
+    --link-color: #000000;
+    --link-hover-color: #0e02ed;
     --danger-color: rgb(216, 37, 37);
 
     /* Background Color */
@@ -46,6 +47,9 @@
 
     /* Search Custom */
     --search-width: 250px;
+
+    /* Animation transition */
+    --transition: .3s;
 }
 
 body {
@@ -56,6 +60,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-primary-family);
+    font-weight: normal;
 }
 
 a {
@@ -63,6 +68,28 @@ a {
     font-size: var(--font-normal-size);
     text-decoration: none;
     color: var(--link-color);
+    position: relative;
+    transition: var(--transition);
+}
+
+a:not(.except_under):after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--link-color);
+}
+
+a:hover:after {
+    background-color: var(--link-hover-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    transition: var(--transition);
 }
 
 input, textarea {
@@ -198,4 +225,24 @@ input, textarea {
 }
 
 
+/* About Page Content */
+
+.theme_title {
+    margin-top: var(--side-paddings);
+    margin-bottom: var(--side-paddings);
+}
+
+.theme_subtitle {
+    margin-top: var(--side-paddings);
+    margin-bottom: var(--side-paddings);
+}
+
+.main_preview {
+    width: 500px;
+}
+
+.main_preview img {
+    width: inherit;
+    height: inherit;
+}
 
