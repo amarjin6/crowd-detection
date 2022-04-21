@@ -1,8 +1,9 @@
 import cv2
 import numpy as np
+import time
 
 # Load Yolo
-net = cv2.dnn.readNet('yolov3.weights', 'yolov3.cfg')
+net = cv2.dnn.readNet('yolov4tiny.weights', 'yolov4tiny.cfg')
 
 classes = []
 with open('coco.names', 'r') as f:
@@ -11,23 +12,19 @@ with open('coco.names', 'r') as f:
 cap = cv2.VideoCapture(0)
 font = cv2.FONT_HERSHEY_PLAIN
 colors = np.random.uniform(0, 255, size=(100, 3))
-
+start = time.time()
+frame = 0
 while True:
     layerNames = net.getLayerNames()
     outputLayers = [layerNames[i - 1] for i in net.getUnconnectedOutLayers()]
 
     # Load image
     _, img = cap.read()
+    frame += 1
     height, width, _ = img.shape
-    print(img.shape)
 
     # Detect objects
-    blob = cv2.dnn.blobFromImage(img, 1 / 1024, (416, 416), (0, 0, 0), swapRB=True, crop=False)
-
-    # for b in blob:
-    #     for n, img_blob in enumerate(b):
-    #         cv2.imshow(str(n), img_blob)
-
+    blob = cv2.dnn.blobFromImage(img, 1 / 255, (320, 320), (0, 0, 0), swapRB=True, crop=False)
     net.setInput(blob)
     outs = net.forward(outputLayers)
 
@@ -41,7 +38,7 @@ while True:
             scores = detection[5:]
             classId = np.argmax(scores)
             confidence = scores[classId]
-            if confidence > 0.5:
+            if confidence > 0.2:
                 # Object detected
                 centerX = int(detection[0] * width)
                 centerY = int(detection[1] * height)
@@ -58,22 +55,20 @@ while True:
 
     indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
 
-    font = cv2.FONT_HERSHEY_SIMPLEX
-
-    j = 0
     for i in range(len(boxes)):
         if i in indexes:
             x, y, w, h = boxes[i]
             label = str(classes[classIds[i]])
             color = colors[i]
             cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
-            cv2.putText(img, label, (x, y + 30), font, 0.5, color, 2)
-            j += 1
+            cv2.putText(img, label, (x, y + 15), font, 1, color, 2)
 
-    print(j)
-    cv2.imshow('Image', img)
-    key = cv2.waitKey(1)
-    if key == 27:
+    elapsedTime = time.time() - start
+    fps = frame / elapsedTime
+    print(fps)
+
+    cv2.imshow("I", img)
+    if cv2.waitKey(1) == 27:
         break
 
 cap.release()
