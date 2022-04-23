@@ -8,11 +8,12 @@ export const Auth = () => {
     return (
         <div className="wrapper df">
             <Form title={"Authorization"} subtitle={"Write your data for login here"}>
-                <Input hint={"Name"} warning={"Field is empty"} placeholder="Saydullin" />
-                <Input hint={"Email"} placeholder="Saydullin@gmail.com" />
+                <Input hint={"Name"} warning={"Field is empty"} placeholder="John" />
+                <Input hint={"Surname"} warning={"Field is empty"} placeholder="Doe" />
+                <Input hint={"Email"} placeholder="example@gmail.com" />
                 <Input hint={"Password"} warning={"Field is empty"} isError={true} placeholder="********" />
                 <ButtonStyle type={"button"}>Done</ButtonStyle>
-                <NavLink to="/sign-in" className={"bl-l fs-t"}>Not in yet? Registr now!</NavLink>
+                <NavLink to="/sign-in" className={"bl-l fs-t"}>Not yet?  Register now!</NavLink>
             </Form>
         </div>
     )
