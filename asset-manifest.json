@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/crowd-detection/static/css/main.0773368a.css",
-    "main.js": "/crowd-detection/static/js/main.1a940dee.js",
+    "main.css": "/crowd-detection/static/css/main.3d72eb93.css",
+    "main.js": "/crowd-detection/static/js/main.3aa5340d.js",
     "static/js/787.9da547e2.chunk.js": "/crowd-detection/static/js/787.9da547e2.chunk.js",
     "static/media/SourceSansPro-Regular.ttf": "/crowd-detection/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
     "static/media/SourceSansPro-Black.ttf": "/crowd-detection/static/media/SourceSansPro-Black.3633cc84b6efe1f1515e.ttf",
@@ -10,12 +10,12 @@
     "static/media/revicons.ttf": "/crowd-detection/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/crowd-detection/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/crowd-detection/index.html",
-    "main.0773368a.css.map": "/crowd-detection/static/css/main.0773368a.css.map",
-    "main.1a940dee.js.map": "/crowd-detection/static/js/main.1a940dee.js.map",
+    "main.3d72eb93.css.map": "/crowd-detection/static/css/main.3d72eb93.css.map",
+    "main.3aa5340d.js.map": "/crowd-detection/static/js/main.3aa5340d.js.map",
     "787.9da547e2.chunk.js.map": "/crowd-detection/static/js/787.9da547e2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0773368a.css",
-    "static/js/main.1a940dee.js"
+    "static/css/main.3d72eb93.css",
+    "static/js/main.3aa5340d.js"
   ]
 }
