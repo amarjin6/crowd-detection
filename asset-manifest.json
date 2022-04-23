@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/crowd-detection/static/css/main.beb1110c.css",
-    "main.js": "/crowd-detection/static/js/main.758d3bc2.js",
+    "main.js": "/crowd-detection/static/js/main.c5fcc846.js",
     "static/js/787.9da547e2.chunk.js": "/crowd-detection/static/js/787.9da547e2.chunk.js",
     "static/media/SourceSansPro-Regular.ttf": "/crowd-detection/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
     "static/media/SourceSansPro-Black.ttf": "/crowd-detection/static/media/SourceSansPro-Black.3633cc84b6efe1f1515e.ttf",
@@ -12,11 +12,11 @@
     "static/media/revicons.woff": "/crowd-detection/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/crowd-detection/index.html",
     "main.beb1110c.css.map": "/crowd-detection/static/css/main.beb1110c.css.map",
-    "main.758d3bc2.js.map": "/crowd-detection/static/js/main.758d3bc2.js.map",
+    "main.c5fcc846.js.map": "/crowd-detection/static/js/main.c5fcc846.js.map",
     "787.9da547e2.chunk.js.map": "/crowd-detection/static/js/787.9da547e2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.beb1110c.css",
-    "static/js/main.758d3bc2.js"
+    "static/js/main.c5fcc846.js"
   ]
 }
