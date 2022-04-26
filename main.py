@@ -1,5 +1,9 @@
 from objectDetection import *
 from objectTracker import *
+from roi import *
+
+# Cam video
+cam = 'cam\\elevator1080p.mp4'
 
 # Load Object Detection
 od = ObjectDetection()
@@ -14,14 +18,17 @@ allowed_objects = ['person', 'dog', 'cat']
 detected_objects = []
 
 # Load the video stream
-cap = cv2.VideoCapture('cam\\elevator1080p.mp4')
+cap = cv2.VideoCapture(cam)
 
 while True:
     _, img = cap.read()
     height, width, _ = img.shape
 
+    # Extract Region of interest
+    roi = choose(cam, img)
+
     # Detect objects
-    class_ids, scores, boxes = od.model.detect(img, nmsThreshold=0.4)
+    class_ids, scores, boxes = od.model.detect(roi, nmsThreshold=0.4)
 
     for (class_id, score, box) in zip(class_ids, scores, boxes):
         x, y, w, h = box
@@ -32,8 +39,8 @@ while True:
             # Track objects
             bbs = ot.update(detected_objects)
             color = od.colors[class_id]
-            cv2.putText(img, f'{class_name}: {bbs[-1][-1]}', (x, y - 10), 0, 0.5, color, 1)
-            cv2.rectangle(img, (x, y), (x + w, y + h), color, 3)
+            cv2.putText(roi, f'{class_name}: {bbs[-1][-1]}', (x, y - 10), 0, 0.5, color, 1)
+            cv2.rectangle(roi, (x, y), (x + w, y + h), color, 3)
 
     cv2.imshow('Cam', img)
 
