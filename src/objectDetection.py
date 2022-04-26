@@ -5,7 +5,6 @@ import numpy as np
 class ObjectDetection:
     def __init__(self, weights_path="models\\yolov4.weights", cfg_path="models\\yolov4.cfg"):
         print("Loading Object Detection")
-        print("Running opencv with YOLOv4")
         self.nmsThreshold = 0.4
         self.confThreshold = 0.5
         self.image_size = 608
@@ -22,10 +21,9 @@ class ObjectDetection:
         self.load_class_names()
         self.colors = np.random.uniform(0, 255, size=(80, 3))
 
-        self.model.setInputParams(size=(self.image_size, self.image_size), scale=1/255)
+        self.model.setInputParams(size=(self.image_size, self.image_size), scale=1 / 255)
 
     def load_class_names(self, classes_path="models\\coco.names"):
-
         with open(classes_path, "r") as file_object:
             for class_name in file_object.readlines():
                 class_name = class_name.strip()
