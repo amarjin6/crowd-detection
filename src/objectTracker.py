@@ -1,14 +1,13 @@
 import math
 
 
-class EuclideanDistTracker:
+class MahalanobisDistTracker:
     def __init__(self):
+        print("Loading Object Tracking")
         # Store the center positions of the objects
         self.center_points = {}
-        # Keep the count of the IDs
-        # each time a new object id detected, the count will increase by one
+        # Keep the count of the IDs, each time a new object id detected, the count will increase by one
         self.id_count = 0
-
 
     def update(self, objects_rect):
         # Object boxes and ids
@@ -27,7 +26,6 @@ class EuclideanDistTracker:
 
                 if dist < 25:
                     self.center_points[id] = (cx, cy)
-                    print(self.center_points)
                     objects_bbs_ids.append([x, y, w, h, id])
                     same_object_detected = True
                     break
@@ -48,6 +46,3 @@ class EuclideanDistTracker:
         # Update dictionary with IDs not used removed
         self.center_points = new_center_points.copy()
         return objects_bbs_ids
-
-
-
