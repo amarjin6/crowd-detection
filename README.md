@@ -9,8 +9,9 @@ Analyze live videos throw web-cams about the number of people, located in commun
 * **Enjoy!**
 
 ## 🛠How to Use🛠
-* Run from your IDE or use direct link to our web-site: ` https://amarjin6.github.io/crowd-detection`
+* Run from your IDE or use direct link to our [**SITE**](https://amarjin6.github.io/crowd-detection)
 
+* **Complete!**
   
 **For more information use the [video](https://github.com/amarjin6/crowd-detection/tree/master/IBA%20%26%20BSUIR%20topic) demonstration**
 
@@ -23,7 +24,9 @@ Analyze live videos throw web-cams about the number of people, located in commun
 *All tests were completed!*
 
 ![python-logo (2)](https://user-images.githubusercontent.com/86531927/156536220-5db566c6-9e2d-4c92-a239-2292bad68333.png)
-![logo_team](https://user-images.githubusercontent.com/86531927/165640640-47ae5d25-ca5d-4008-b920-4380cef53e4b.png)
-![eye-scan](https://user-images.githubusercontent.com/86531927/165640656-42bfe01f-b49c-4bde-abc4-489816c2de57.png)
+![team](https://user-images.githubusercontent.com/86531927/165641700-d93fbda0-97bc-4137-8b67-c4a31ddc0dd9.png)
+![crowd eye](https://user-images.githubusercontent.com/86531927/165641624-28bdf93f-8058-489d-abd5-c9fcfd03ac99.png)
 
-# Python VegasML Crowd Detection
+
+# Python VegasML Crowd Detection![crowd eye]
+
