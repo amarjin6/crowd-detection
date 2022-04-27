@@ -24,9 +24,8 @@ Analyze live videos throw web-cams about the number of people, located in commun
 *All tests were completed!*
 
 ![python-logo (2)](https://user-images.githubusercontent.com/86531927/156536220-5db566c6-9e2d-4c92-a239-2292bad68333.png)
-![team](https://user-images.githubusercontent.com/86531927/165641700-d93fbda0-97bc-4137-8b67-c4a31ddc0dd9.png)
+![мозг](https://user-images.githubusercontent.com/86531927/165641911-50b6adf8-36fd-4f48-8401-15e609de096f.png)
 ![crowd eye](https://user-images.githubusercontent.com/86531927/165641624-28bdf93f-8058-489d-abd5-c9fcfd03ac99.png)
 
-
-# Python VegasML Crowd Detection![crowd eye]
+# Python VegasML Crowd Detection
 
