@@ -1,3 +1,9 @@
+![GitHub language count](https://img.shields.io/github/languages/count/amarjin6/crowd-detection?logo=python&logoColor=yellow)
+![GitHub repo size](https://img.shields.io/github/repo-size/amarjin6/crowd-detection?color=green&label=size&logo=gitbook)
+![GitHub all releases](https://img.shields.io/github/downloads/amarjin6/crowd-detection/total?logo=Stackbit)
+![GitHub contributors](https://img.shields.io/github/contributors/amarjin6/crowd-detection?logo=ActiGraph&logoColor=orange)
+![GitHub watchers](https://img.shields.io/github/watchers/amarjin6/crowd-detection?logo=wechat)
+
 # 🧠**Crowd Detection system**🧠
 
 ## 💡**Our goal**💡 
@@ -20,15 +26,15 @@ Analyze live videos throw web-cams about the number of people, located in commun
 **For more information watch the 🎶 [video](https://github.com/amarjin6/crowd-detection/tree/master/IBA%20%26%20BSUIR%20topic)** 🎶
 
 ## 🎭**Team Members**🎭
-👑 [**amarjin6**](https://github.com/amarjin6) • Team Lead, Back-end Developer
+👑 [**amarjin6**](https://github.com/amarjin6) • Team Lead, Back-end developer
 
-🌑 [**Saydullin**](https://github.com/Saydullin) • Front-end Developer
+🌑 [**Saydullin**](https://github.com/Saydullin) • Front-end developer
 
-🌑 [**trypuzz**](https://github.com/trypuzz) • Q&A, UX Designer
+🌑 [**trypuzz**](https://github.com/trypuzz) • Q&A, UX designer
 
-🌑 [**accuracy-itself**](https://github.com/accuracy-itself) • Back-end Developer
+🌑 [**accuracy-itself**](https://github.com/accuracy-itself) • Back-end developer
 
-🌑 [**arbuzov**](https://github.com/amarjin6) • Helper, Business Analytic
+🌑 [**arbuzov**](https://github.com/amarjin6) • Helper, Business analyst
 
 ![team](https://user-images.githubusercontent.com/86531927/165850033-cd7a7ad0-18c3-4ce1-9d28-0a5e275c6f11.png)
 
