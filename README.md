@@ -1,4 +1,4 @@
-# 🧠**Crowd Detection system**🧧️
+# 🧠**Crowd Detection system**🧠
 
 ## 💡**Our goal**💡 
 Analyze live videos throw web-cams about the number of people, located in community centers with the help of neural networks, based on YOLO detection algorithm.
@@ -15,18 +15,22 @@ Analyze live videos throw web-cams about the number of people, located in commun
 ## 🎆**Our solution**🎆
 🎌 **Crowd Detection is a real-time occupancy counting system.** Was created website and server part based on You only look once (YOLO) a state-of-the-art, real-time object detection system. Our model has several advantages over classifier-based systems. It looks at the whole image at test time so its predictions are informed by global context in the image. It also makes predictions with a single network evaluation unlike systems like R-CNN which require thousands for a single image. This makes it extremely fast, more than 1000x faster than R-CNN and 100x faster than Fast R-CNN.
 
+![site](https://user-images.githubusercontent.com/86531927/165849737-4702c702-090a-4a78-9f61-ddaa16df460c.jpg)
+
 **For more information watch the 🎶 [video](https://github.com/amarjin6/crowd-detection/tree/master/IBA%20%26%20BSUIR%20topic)** 🎶
 
 ## 🎭**Team Members**🎭
-👑 [**amarjin6**](https://github.com/amarjin6) • Team Lead, Back-end Developer.
+👑 [**amarjin6**](https://github.com/amarjin6) • Team Lead, Back-end Developer
 
-🌑 [**Saydullin**](https://github.com/Saydullin) • Front-end Developer.
+🌑 [**Saydullin**](https://github.com/Saydullin) • Front-end Developer
 
-🌑 [**trypuzz**](https://github.com/trypuzz) • Q&A, UX Designer.
+🌑 [**trypuzz**](https://github.com/trypuzz) • Q&A, UX Designer
 
-🌑 [**accuracy-itself**](https://github.com/accuracy-itself) • Back-end Developer.
+🌑 [**accuracy-itself**](https://github.com/accuracy-itself) • Back-end Developer
 
-🌑 [**arbuzov**](https://github.com/amarjin6) • Helper, Business Analytic.
+🌑 [**arbuzov**](https://github.com/amarjin6) • Helper, Business Analytic
+
+![team](https://user-images.githubusercontent.com/86531927/165850033-cd7a7ad0-18c3-4ce1-9d28-0a5e275c6f11.png)
 
 ## 🔮**Furure goals**🔮
 ### 🎟️ Coverage of more than 1% of shopping and public centers of the Republic of Belarus for the first year of software implementation
@@ -34,6 +38,7 @@ Analyze live videos throw web-cams about the number of people, located in commun
 ### 🎟️ Ability to add filters to specific items/objects (humans, dogs, men < 18 y.o, women > 18 y.o, working hours)
 ### 🎟️ Automatic sending and generation of a report for a user-selected period
 ### 🎟️ • Platform support, ensuring the smooth operation of the system, frequent updates and new features...
+![goals](https://user-images.githubusercontent.com/86531927/165849825-1047203a-aad6-4e34-bc67-db7c5264bca9.png)
 
 ![python](https://user-images.githubusercontent.com/86531927/156536220-5db566c6-9e2d-4c92-a239-2292bad68333.png)
 ![crowd team](https://user-images.githubusercontent.com/86531927/165641911-50b6adf8-36fd-4f48-8401-15e609de096f.png)
